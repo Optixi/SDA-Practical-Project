@@ -11,6 +11,7 @@ public class Pet {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Long id;
+<<<<<<< Updated upstream
     @Column(name ="race")
     private String race;
     @Column(name ="birth_Date")
@@ -19,12 +20,30 @@ public class Pet {
     private boolean isVaccinated;
     @Column(name = "owner_name")
     private String ownerName;
+=======
+    @Column(name = "race")
+
+    private String race;
+    @Column(name = "birth_date")
+
+    private Date birthDate;
+    @Column(name = "is_vaccinated")
+
+    private boolean isVaccinated;
+    @Column(name = "owner_name")
+
+    private String ownerName;
+
+>>>>>>> Stashed changes
     @OneToMany(mappedBy = "pet")
     private List<Consult> consults;
 
     public Pet() {
     }
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
     public Pet(String race, Date birthDate, boolean isVaccinated, String ownerName) {
         this.race = race;
         this.birthDate = birthDate;
@@ -72,11 +91,15 @@ public class Pet {
         this.ownerName = ownerName;
     }
 
+<<<<<<< Updated upstream
     public List<Consult> getConsults() {
         return consults;
     }
 
     public void setConsults(List<Consult> consults) {
+=======
+    public Pet(List<Consult> consults) {
+>>>>>>> Stashed changes
         this.consults = consults;
     }
 
@@ -90,4 +113,8 @@ public class Pet {
                 ", ownerName='" + ownerName + '\'' +
                 '}';
     }
+<<<<<<< Updated upstream
 }
+=======
+}
+>>>>>>> Stashed changes

@@ -2,25 +2,45 @@ package com.sda.practicalproject.model;
 
 import javax.persistence.*;
 import java.util.Date;
+<<<<<<< Updated upstream
 @Entity
 @Table(name = "Consult")
+=======
+
+@Entity
+@Table(name = "consult")
+>>>>>>> Stashed changes
 public class Consult {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Long id;
     @Column(name = "appointment_date")
+<<<<<<< Updated upstream
     private Date appointmentDate;
     @Column(name = "description")
+=======
+
+    private Date appointmentDate;
+    @Column(name = "description")
+
+>>>>>>> Stashed changes
     private String description;
     @ManyToOne
     @JoinColumn(name = "vet_id")
     private Vet vet;
+<<<<<<< Updated upstream
     @ManyToOne
     @JoinColumn(name = "pet_id")
     private Pet pet;
 
 
+=======
+
+    @ManyToOne
+    @JoinColumn(name = "pet_id")
+    private Pet pet;
+>>>>>>> Stashed changes
     public Consult() {
     }
 
@@ -77,5 +97,9 @@ public class Consult {
                 ", description='" + description + '\'' +
                 '}';
     }
+<<<<<<< Updated upstream
 
 }
+=======
+}
+>>>>>>> Stashed changes

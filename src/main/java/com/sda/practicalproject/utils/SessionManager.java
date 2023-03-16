@@ -22,8 +22,19 @@ public class SessionManager extends  AbstractSessionManager{
     }
     @Override
     protected void setAnnotatedClasses(Configuration configuration) {
+<<<<<<< Updated upstream
        configuration.addAnnotatedClass(Vet.class);
        configuration.addAnnotatedClass(Pet.class);
        configuration.addAnnotatedClass(Consult.class);
+=======
+
+           configuration.addAnnotatedClass(Vet.class);
+            configuration.addAnnotatedClass(Pet.class);
+            configuration.addAnnotatedClass(Consult.class);
+        }
+>>>>>>> Stashed changes
     }
-}
+
+
+
+
